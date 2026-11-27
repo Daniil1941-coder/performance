@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page 1</title>
+    <link rel="stylesheet" href="tasks.css">
+</head>
+<body>
+<main>
+    <h1>Page 1</h1>
+    <p>Go to <a href="page2.html">Page 2</a>, then use the buttons below.</p>
+
+    <button onclick="history.back()">Back</button>
+    <button onclick="history.forward()">Forward</button>
+
+    <p id="historyInfo"></p>
+    <p><a href="index.html">All tasks</a></p>
+</main>
+
+<script>
+    // On load, show how many pages are in this tab's history
+    window.addEventListener("load", function () {
+        document.getElementById("historyInfo").textContent =
+            "history.length = " + history.length;
+    });
+</script>
+</body>
+</html>

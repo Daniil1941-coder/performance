@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration</title>
+    <link rel="stylesheet" href="tasks.css">
+</head>
+<body>
+<main>
+    <h1>Registration</h1>
+
+    <form id="registerForm" novalidate>
+        <label for="regName">Name</label>
+        <input type="text" id="regName" name="name">
+
+        <label for="regEmail">Email</label>
+        <input type="email" id="regEmail" name="email">
+
+        <label for="regPhone">Phone (10 digits)</label>
+        <input type="tel" id="regPhone" name="phone">
+
+        <label for="regPassword">Password</label>
+        <input type="password" id="regPassword" name="password">
+
+        <label for="regConfirm">Confirm password</label>
+        <input type="password" id="regConfirm" name="confirm">
+
+        <label for="regCity">City</label>
+        <select id="regCity" name="city">
+            <option value="">-- choose a city --</option>
+            <option value="Tashkent">Tashkent</option>
+            <option value="Samarkand">Samarkand</option>
+            <option value="Bukhara">Bukhara</option>
+            <option value="Khiva">Khiva</option>
+        </select>
+
+        <button type="submit">Register</button>
+    </form>
+
+    <ul id="registerErrors" class="errors"></ul>
+    <p><a href="index.html">All tasks</a></p>
+</main>
+
+<script src="tasks.js"></script>
+</body>
+</html>

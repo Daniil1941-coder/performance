@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz</title>
+    <link rel="stylesheet" href="tasks.css">
+</head>
+<body>
+<main>
+    <h1>Uzbekistan Quiz</h1>
+
+    <form id="quizForm">
+        <div class="question">
+            <p>1. What is the capital of Uzbekistan?</p>
+            <input type="radio" name="q1" id="q1a" value="Samarkand"><label for="q1a">Samarkand</label>
+            <input type="radio" name="q1" id="q1b" value="Tashkent"><label for="q1b">Tashkent</label>
+            <input type="radio" name="q1" id="q1c" value="Bukhara"><label for="q1c">Bukhara</label>
+        </div>
+
+        <div class="question">
+            <p>2. Which city is famous for the Registan square?</p>
+            <input type="radio" name="q2" id="q2a" value="Samarkand"><label for="q2a">Samarkand</label>
+            <input type="radio" name="q2" id="q2b" value="Khiva"><label for="q2b">Khiva</label>
+            <input type="radio" name="q2" id="q2c" value="Namangan"><label for="q2c">Namangan</label>
+        </div>
+
+        <div class="question">
+            <p>3. What is the currency of Uzbekistan?</p>
+            <input type="radio" name="q3" id="q3a" value="Tenge"><label for="q3a">Tenge</label>
+            <input type="radio" name="q3" id="q3b" value="Ruble"><label for="q3b">Ruble</label>
+            <input type="radio" name="q3" id="q3c" value="Sum"><label for="q3c">Sum</label>
+        </div>
+
+        <div class="question">
+            <p>4. Which ancient trade route passed through Uzbekistan?</p>
+            <input type="radio" name="q4" id="q4a" value="Silk Road"><label for="q4a">Silk Road</label>
+            <input type="radio" name="q4" id="q4b" value="Amber Road"><label for="q4b">Amber Road</label>
+            <input type="radio" name="q4" id="q4c" value="Spice Route"><label for="q4c">Spice Route</label>
+        </div>
+
+        <div class="question">
+            <p>5. Which city has the walled old town Itchan Kala?</p>
+            <input type="radio" name="q5" id="q5a" value="Khiva"><label for="q5a">Khiva</label>
+            <input type="radio" name="q5" id="q5b" value="Tashkent"><label for="q5b">Tashkent</label>
+            <input type="radio" name="q5" id="q5c" value="Fergana"><label for="q5c">Fergana</label>
+        </div>
+
+        <button type="submit">Submit</button>
+    </form>
+
+    <p id="quizResult" class="result"></p>
+    <p><a href="index.html">All tasks</a></p>
+</main>
+
+<script src="tasks.js"></script>
+</body>
+</html>
